@@ -47,7 +47,7 @@ export default function Gastos() {
         <input
           type="text"
           placeholder="Filtrar por categoria..."
-          className="border rounded px-3 py-2 w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border border-gray-400 rounded px-3 py-1 w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-blue-400"
           value={categoriaFiltro}
           onChange={e => setCategoriaFiltro(e.target.value)}
         />
@@ -65,7 +65,7 @@ export default function Gastos() {
           {gastosFiltrados.map((g) => (
             <div
               key={g.id}
-              className="grid grid-cols-1 md:grid-cols-6 border-b last:border-b-0 hover:bg-gray-50 text-sm items-center"
+              className="grid grid-cols-1 md:grid-cols-6 border-b last:border-b-0 border-gray-200 hover:bg-gray-50 text-sm items-center"
             >
               {/* Mobile: label + valor, Desktop: só valor */}
               <div className="px-4 py-2 md:py-3 flex md:block">
